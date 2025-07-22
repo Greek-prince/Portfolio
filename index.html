@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayan Ghosh - Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Link to your external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="antialiased">
+
+    <!-- Navbar -->
+    <nav class="navbar p-4 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold gradient-text">Ayan Ghosh</a>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="#home" class="hover:text-purple-400 transition duration-300">Home</a>
+                <a href="#about" class="hover:text-purple-400 transition duration-300">About</a>
+                <a href="#services" class="hover:text-purple-400 transition duration-300">Services</a>
+                <a href="#projects" class="hover:text-purple-400 transition duration-300">Projects</a>
+                <a href="#contact" class="hover:text-purple-400 transition duration-300">Contact</a>
+                <a href="main final cv.pdf" download class="btn-primary px-4 py-2 rounded-lg flex items-center space-x-2">
+                    <i class="fas fa-file-alt"></i>
+                    <span>Resume</span>
+                </a>
+            </div>
+            <!-- Mobile menu button -->
+            <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-2 text-center">
+            <a href="#home" class="block py-2 hover:text-purple-400 transition duration-300">Home</a>
+            <a href="#about" class="block py-2 hover:text-purple-400 transition duration-300">About</a>
+            <a href="#services" class="block py-2 hover:text-purple-400 transition duration-300">Services</a>
+            <a href="#projects" class="block py-2 hover:text-purple-400 transition duration-300">Projects</a>
+            <a href="#contact" class="block py-2 hover:text-purple-400 transition duration-300">Contact</a>
+            <a href="main final cv.pdf" download class="btn-primary block py-2 rounded-lg flex items-center justify-center space-x-2 mx-auto w-3/4">
+                <i class="fas fa-file-alt"></i>
+                <span>Resume</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center text-center md:text-left px-4 py-16">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+            <div class="md:w-1/2 mb-8 md:mb-0">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4 leading-tight">
+                    Hello, I'm <span class="gradient-text">Ayan Ghosh</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-300 mb-4">
+                    Backend Developer | AI/ML Enthusiast | Python Programmer
+                </p>
+                <p class="text-lg text-gray-400 mb-8">
+                    Building smart, secure, and scalable digital solutions.
+                </p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center md:justify-start">
+                    <a href="main final cv.pdf" download class="btn-primary px-6 py-3 rounded-lg flex items-center justify-center space-x-2">
+                        <i class="fas fa-download"></i>
+                        <span>Download Resume</span>
+                    </a>
+                    <a href="#contact" class="btn-secondary px-6 py-3 rounded-lg flex items-center justify-center space-x-2">
+                        <i class="fas fa-envelope"></i>
+                        <span>Contact Me</span>
+                    </a>
+                    <a href="#projects" class="btn-secondary px-6 py-3 rounded-lg flex items-center justify-center space-x-2">
+                        <i class="fas fa-folder-open"></i>
+                        <span>View Projects</span>
+                    </a>
+                </div>
+                <div class="mt-12 text-gray-400 text-left">
+                    <h3 class="text-lg font-semibold mb-3">Tech Stack</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">Java</span>
+                        <span class="project-tag">JavaScript</span>
+                        <span class="project-tag">Node.js</span>
+                        <span class="project-tag">MongoDB</span>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center md:justify-end">
+                <!-- Profile Photo with fallback -->
+                <img src="DP.jpg" alt="Ayan Ghosh" class="rounded-full w-64 h-64 md:w-80 md:h-80 object-cover shadow-lg border-4 border-purple-600" onerror="this.onerror=null;this.src='https://placehold.co/320x320/3e206d/e0e0e0?text=Profile+Photo';">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-16 px-4 bg-gray-900">
+        <div class="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <!-- About Me content -->
+            <div class="text-left">
+                <h2 class="text-4xl font-bold mb-4">About Me</h2>
+                <p class="text-lg text-gray-300 mb-6">Passionate about technology and innovation</p>
+                <p class="text-gray-400 mb-4">
+                    I am a Computer Science and Engineering student from UEM Kolkata (Class of 2026),
+                    passionate about IoT, Cybersecurity, Blockchain, and AI/ML. As a backend developer and
+                    freelance web/app creator, I specialize in Python, Java, JavaScript, Node.js, and project
+                    management.
+                </p>
+                <p class="text-gray-400 mb-8">
+                    My focus lies in developing smart, secure, and scalable solutions that leverage cutting-edge
+                    technologies to solve real-world problems.
+                </p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#projects" class="btn-secondary px-6 py-3 rounded-lg flex items-center justify-center space-x-2">
+                        <i class="fas fa-folder-open"></i>
+                        <span>View Projects</span>
+                    </a>
+                    <a href="#services" class="btn-secondary px-6 py-3 rounded-lg flex items-center justify-center space-x-2">
+                        <i class="fas fa-cogs"></i>
+                        <span>See Skills</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Education content -->
+            <div class="text-left">
+                <h2 class="text-4xl font-bold mb-4">Education</h2>
+                <p class="text-lg text-gray-300 mb-6">Academic background and achievements</p>
+
+                <div class="space-y-6">
+                    <!-- Education Item 1 -->
+                    <div class="card p-6 flex items-start space-x-4">
+                        <div class="service-icon text-3xl mt-1">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-purple-300">B.Tech in CSE</h3>
+                            <p class="text-gray-400">UEM Kolkata</p>
+                            <p class="text-gray-500 text-sm">2022-2026 • Current</p>
+                        </div>
+                    </div>
+
+                    <!-- Education Item 2 -->
+                    <div class="card p-6 flex items-start space-x-4">
+                        <div class="service-icon text-3xl mt-1">
+                            <i class="fas fa-school"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-purple-300">Class 12</h3>
+                            <p class="text-gray-400">WBCHSE – Narendranath Vidya Mandir</p>
+                            <p class="text-gray-500 text-sm">2022 • 88%</p>
+                        </div>
+                    </div>
+
+                    <!-- Education Item 3 -->
+                    <div class="card p-6 flex items-start space-x-4">
+                        <div class="service-icon text-3xl mt-1">
+                            <i class="fas fa-school"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-purple-300">Class 10</h3>
+                            <p class="text-gray-400">WBBSE – Baranagar Ramakrishna Mission</p>
+                            <p class="text-gray-500 text-sm">2020 • 89.8%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services & Expertise Section -->
+    <section id="services" class="py-16 px-4 bg-gray-900">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-4">Services & Expertise</h2>
+            <p class="text-lg text-gray-400 mb-12">Specialized skills and services I offer as a developer and tech enthusiast</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Card 1: Backend Development -->
+                <div class="card p-6 flex flex-col items-center text-center">
+                    <div class="service-icon text-5xl mb-4">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-3">Backend Development</h3>
+                    <p class="text-gray-400 mb-4">
+                        Building robust, scalable backend systems with Python, Java, and Node.js
+                    </p>
+                    <ul class="text-gray-400 text-left w-full list-disc list-inside">
+                        <li>Custom solutions tailored to requirements</li>
+                        <li>Best practices and industry standards</li>
+                        <li>Continuous support and maintenance</li>
+                    </ul>
+                </div>
+
+                <!-- Service Card 2: AI/ML Integration -->
+                <div class="card p-6 flex flex-col items-center text-center">
+                    <div class="service-icon text-5xl mb-4">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-3">AI/ML Integration</h3>
+                    <p class="text-gray-400 mb-4">
+                        Creating intelligent applications with machine learning models and data analysis
+                    </p>
+                    <ul class="text-gray-400 text-left w-full list-disc list-inside">
+                        <li>Custom solutions tailored to requirements</li>
+                        <li>Best practices and industry standards</li>
+                        <li>Continuous support and maintenance</li>
+                    </ul>
+                </div>
+
+                <!-- Service Card 3: API Development -->
+                <div class="card p-6 flex flex-col items-center text-center">
+                    <div class="service-icon text-5xl mb-4">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-3">API Development</h3>
+                    <p class="text-gray-400 mb-4">
+                        Designing RESTful APIs and microservices for seamless system integration
+                    </p>
+                    <ul class="text-gray-400 text-left w-full list-disc list-inside">
+                        <li>Custom solutions tailored to requirements</li>
+                        <li>Best practices and industry standards</li>
+                        <li>Continuous support and maintenance</li>
+                    </ul>
+                </div>
+
+                <!-- Service Card 4: Database Management -->
+                <div class="card p-6 flex flex-col items-center text-center">
+                    <div class="service-icon text-5xl mb-4">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-3">Database Management</h3>
+                    <p class="text-gray-400 mb-4">
+                        Working with MongoDB, SQL databases and optimizing data storage solutions
+                    </p>
+                    <ul class="text-gray-400 text-left w-full list-disc list-inside">
+                        <li>Custom solutions tailored to requirements</li>
+                        <li>Best practices and industry standards</li>
+                        <li>Continuous support and maintenance</li>
+                    </ul>
+                </div>
+
+                <!-- Service Card 5: Cybersecurity -->
+                <div class="card p-6 flex flex-col items-center text-center">
+                    <div class="service-icon text-5xl mb-4">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-3">Cybersecurity</h3>
+                    <p class="text-gray-400 mb-4">
+                        Implementing secure coding practices and vulnerability assessment
+                    </p>
+                    <ul class="text-gray-400 text-left w-full list-disc list-inside">
+                        <li>Custom solutions tailored to requirements</li>
+                        <li>Best practices and industry standards</li>
+                        <li>Continuous support and maintenance</li>
+                    </ul>
+                </div>
+
+                <!-- Service Card 6: IoT Solutions -->
+                <div class="card p-6 flex flex-col items-center text-center">
+                    <div class="service-icon text-5xl mb-4">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-3">IoT Solutions</h3>
+                    <p class="text-gray-400 mb-4">
+                        Developing Internet of Things applications and connected systems
+                    </p>
+                    <ul class="text-gray-400 text-left w-full list-disc list-inside">
+                        <li>Custom solutions tailored to requirements</li>
+                        <li>Best practices and industry standards</li>
+                        <li>Continuous support and maintenance</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 px-4">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-4">Projects</h2>
+            <p class="text-lg text-gray-400 mb-12">Showcasing my work in backend development, AI/ML, and web applications</p>
+
+            <div class="flex justify-center space-x-4 mb-8">
+                <button class="btn-primary px-6 py-2 rounded-lg" data-filter="all">All</button>
+                <button class="btn-secondary px-6 py-2 rounded-lg" data-filter="web">Web</button>
+                <button class="btn-secondary px-6 py-2 rounded-lg" data-filter="backend">Backend</button>
+                <button class="btn-secondary px-6 py-2 rounded-lg" data-filter="ai-ml">AI/ML</button>
+                <button class="btn-secondary px-6 py-2 rounded-lg" data-filter="api">API</button>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Project Card 1: Crop Recommendation System -->
+                <div class="card p-4 text-left project-item" data-categories="ai-ml backend">
+                    <img src="https://placehold.co/600x400/3e206d/e0e0e0?text=Crop+Recommendation" alt="Crop Recommendation System" class="rounded-lg mb-4 w-full h-48 object-cover">
+                    <h3 class="text-xl font-semibold mb-2">Crop Recommendation System</h3>
+                    <p class="text-gray-400 mb-4">Predicts best crops using ML models based on soil/weather data.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">Scikit-learn</span>
+                        <span class="project-tag">Flask</span>
+                    </div>
+                    <div class="flex space-x-4">
+                        <a href="#" class="btn-secondary px-4 py-2 rounded-lg flex items-center space-x-2"><i class="fas fa-code"></i> <span>Code</span></a>
+                        <!-- <a href="#" class="btn-secondary px-4 py-2 rounded-lg flex items-center space-x-2"><i class="fas fa-external-link-alt"></i> <span>Live</span></a> -->
+                    </div>
+                </div>
+
+                <!-- Project Card 2: Notepad App -->
+                <div class="card p-4 text-left project-item" data-categories="web backend">
+                    <img src="https://placehold.co/600x400/3e206d/e0e0e0?text=Notepad+App" alt="Notepad App" class="rounded-lg mb-4 w-full h-48 object-cover">
+                    <h3 class="text-xl font-semibold mb-2">Notepad App</h3>
+                    <p class="text-gray-400 mb-4">User-friendly app for creating, editing, and organizing notes efficiently.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="project-tag">JS</span>
+                        <span class="project-tag">Express</span>
+                        <span class="project-tag">Node.js</span>
+                    </div>
+                    <div class="flex space-x-4">
+                        <a href="#" class="btn-secondary px-4 py-2 rounded-lg flex items-center space-x-2"><i class="fas fa-code"></i> <span>Code</span></a>
+                        <a href="#" class="btn-secondary px-4 py-2 rounded-lg flex items-center space-x-2"><i class="fas fa-external-link-alt"></i> <span>Live</span></a>
+                    </div>
+                </div>
+
+                <!-- Project Card 3: Friends Template CRUD App -->
+                <div class="card p-4 text-left project-item" data-categories="web backend api">
+                    <img src="https://placehold.co/600x400/3e206d/e0e0e0?text=Friends+App" alt="Friends Template CRUD App" class="rounded-lg mb-4 w-full h-48 object-cover">
+                    <h3 class="text-xl font-semibold mb-2">Friends Template CRUD App</h3>
+                    <p class="text-gray-400 mb-4">MongoDB-based CRUD system to manage data on 'Friends' series.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="project-tag">MongoDB</span>
+                        <span class="project-tag">Express</span>
+                        <span class="project-tag">Node.js</span>
+                    </div>
+                    <div class="flex space-x-4">
+                        <a href="#" class="btn-secondary px-4 py-2 rounded-lg flex items-center space-x-2"><i class="fas fa-code"></i> <span>Code</span></a>
+                        <a href="#" class="btn-secondary px-4 py-2 rounded-lg flex items-center space-x-2"><i class="fas fa-external-link-alt"></i> <span>Live</span></a>
+                    </div>
+                </div>
+
+                <!-- Project Card 4: Cryptohub -->
+                <div class="card p-4 text-left project-item" data-categories="web api">
+                    <img src="https://placehold.co/600x400/3e206d/e0e0e0?text=Cryptohub" alt="Cryptohub" class="rounded-lg mb-4 w-full h-48 object-cover">
+                    <h3 class="text-xl font-semibold mb-2">Cryptohub</h3>
+                    <p class="text-gray-400 mb-4">Cryptocurrency data app with real-time tracking and analysis.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="project-tag">JavaScript</span>
+                        <span class="project-tag">Express</span>
+                        <span class="project-tag">Node.js</span>
+                    </div>
+                    <div class="flex space-x-4">
+                        <a href="#" class="btn-secondary px-4 py-2 rounded-lg flex items-center space-x-2"><i class="fas fa-code"></i> <span>Code</span></a>
+                        <!-- <a href="#" class="btn-secondary px-4 py-2 rounded-lg flex items-center space-x-2"><i class="fas fa-external-link-alt"></i> <span>Live</span></a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 px-4 bg-gray-900">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-4">Let's Connect</h2>
+            <p class="text-lg text-gray-400 mb-12">Have a project in mind or want to discuss opportunities? I'd love to hear from you.</p>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Send Me a Message Form -->
+                <div class="card p-6 text-left">
+                    <h3 class="text-2xl font-semibold mb-4">Send Me a Message</h3>
+                    <p class="text-gray-400 mb-6">Fill out the form below and I'll get back to you as soon as possible.</p>
+                    <form>
+                        <div class="mb-4">
+                            <label for="name" class="block text-gray-300 text-sm font-bold mb-2">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your name">
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-gray-300 text-sm font-bold mb-2">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Your email">
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-300 text-sm font-bold mb-2">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Your message"></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary w-full py-3 rounded-lg text-lg">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="flex flex-col space-y-8">
+                    <div class="card p-6 text-left">
+                        <h3 class="text-2xl font-semibold mb-4">Contact Information</h3>
+                        <p class="text-gray-400 mb-6">Reach out directly through these channels</p>
+                        <ul class="space-y-4">
+                            <li class="flex items-center space-x-3">
+                                <i class="fas fa-envelope text-purple-400 text-xl"></i>
+                                <span>ayghosh82@gmail.com</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <i class="fas fa-phone text-purple-400 text-xl"></i>
+                                <span>+91 7439500179</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <i class="fab fa-github text-purple-400 text-xl"></i>
+                                <a href="https://github.com/your-github-profile" target="_blank" class="hover:underline">GitHub Profile</a>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <i class="fas fa-file-alt text-purple-400 text-xl"></i>
+                                <a href="main final cv.pdf" download class="hover:underline">Download Resume</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Let's Work Together -->
+                    <div class="card p-6 text-left bg-gradient-to-r from-purple-800 to-purple-600">
+                        <h3 class="text-2xl font-semibold mb-4">Let's Work Together</h3>
+                        <p class="text-gray-200 mb-6">
+                            I'm currently available for freelance work and collaborations. If you have a project that needs
+                            specialized backend, AI/ML, or web development skills, let's discuss how I can help.
+                        </p>
+                        <button class="btn-primary w-full py-3 rounded-lg text-lg">Start a Project</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-12 px-4">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left">
+            <div>
+                <a href="#" class="text-2xl font-bold gradient-text block mb-2">Ayan Ghosh</a>
+                <p class="text-gray-400 mb-4">Building smart, secure, and scalable digital solutions.</p>
+                <div class="flex justify-center md:justify-start space-x-4">
+                    <a href="#" class="footer-social-icon"><i class="fab fa-github"></i></a>
+                    <a href="#" class="footer-social-icon"><i class="fas fa-envelope"></i></a>
+                    <a href="#" class="footer-social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="footer-social-icon"><i class="fas fa-phone-alt"></i></a>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+                <ul class="space-y-2 text-gray-400">
+                    <li><a href="#home" class="hover:text-purple-400 transition duration-300">Home</a></li>
+                    <li><a href="#about" class="hover:text-purple-400 transition duration-300">About</a></li>
+                    <li><a href="#services" class="hover:text-purple-400 transition duration-300">Services</a></li>
+                    <li><a href="#projects" class="hover:text-purple-400 transition duration-300">Projects</a></li>
+                    <li><a href="#contact" class="hover:text-purple-400 transition duration-300">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-xl font-semibold mb-4">Contact</h3>
+                <ul class="space-y-2 text-gray-400">
+                    <li class="flex items-center justify-center md:justify-start space-x-2">
+                        <i class="fas fa-envelope"></i>
+                        <span>ayghosh82@gmail.com</span>
+                    </li>
+                    <li class="flex items-center justify-center md:justify-start space-x-2">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 7439500179</span>
+                    </li>
+                    <li class="flex items-center justify-center md:justify-start space-x-2">
+                        <i class="fab fa-github"></i>
+                        <a href="https://github.com/your-github-profile" target="_blank" class="hover:underline">GitHub Profile</a>
+                    </li>
+                    <li class="flex items-center justify-center md:justify-start space-x-2">
+                        <i class="fas fa-file-alt"></i>
+                        <a href="main final cv.pdf" download class="hover:underline">Download Resume</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-xl font-semibold mb-4">Subscribe to Updates</h3>
+                <p class="text-gray-400 mb-4">Stay updated with my latest projects and tech articles.</p>
+                <div class="flex justify-center md:justify-start">
+                    <input type="email" placeholder="Enter your email" class="p-2 rounded-l-lg w-full max-w-xs">
+                    <button class="btn-primary px-4 py-2 rounded-r-lg">Subscribe</button>
+                </div>
+            </div>
+        </div>
+        <div class="container mx-auto text-center text-gray-500 mt-8 border-t border-gray-700 pt-8">
+            <p>&copy; 2025 Ayan Ghosh. All rights reserved.</p>
+            <div class="flex justify-center space-x-4 mt-2">
+                <a href="#" class="hover:underline">Privacy Policy</a>
+                <a href="#" class="hover:underline">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Link to your external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>

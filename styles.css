@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #1a1a2e; /* Dark background from slides */
+    color: #e0e0e0; /* Light text color */
+}
+.navbar {
+    background-color: #16213e; /* Slightly lighter dark for navbar */
+}
+.btn-primary {
+    background-color: #6a0dad; /* Purple for primary buttons */
+    transition: background-color 0.3s ease;
+}
+.btn-primary:hover {
+    background-color: #8a2be2; /* Lighter purple on hover */
+}
+.btn-secondary {
+    background-color: #3e206d; /* Darker purple for secondary buttons */
+    transition: background-color 0.3s ease;
+}
+.btn-secondary:hover {
+    background-color: #5a309d; /* Lighter darker purple on hover */
+}
+.card {
+    background-color: #16213e;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.gradient-text {
+    background: linear-gradient(to right, #a78bfa, #8b5cf6); /* Purple gradient */
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.service-icon {
+    color: #a78bfa; /* Purple icon color */
+}
+.project-tag {
+    background-color: #3e206d;
+    color: #e0e0e0;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+}
+.footer-social-icon {
+    background-color: #3e206d;
+    color: #e0e0e0;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+.footer-social-icon:hover {
+    background-color: #5a309d;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    background-color: #0f0f1a; /* Darker input background */
+    border: 1px solid #3e206d; /* Purple border */
+    color: #e0e0e0;
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    width: 100%;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    outline: none;
+    border-color: #a78bfa; /* Lighter purple on focus */
+    box-shadow: 0 0 0 2px rgba(167, 139, 250, 0.5);
+}
